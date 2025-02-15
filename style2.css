@@ -1,38 +1,4 @@
 
-/* * {
-  border: 1px solid #000;
-} */
-
-
-
-/*------------------------------------------------
-
-CSS Estructura:
-
-1. VARIABLES
-2. ESTRUCTURA
-2.1 Preloader
-2.2 Barra de navegación
-2.3 Pestaña Home Seccion 2 (iconos que hay) 
-2.4 Pagina Home (Ropa y alimentos para mascotas)
-2.5 Pagina Home (Alimento para mascotas)
-2.6 Pagina Contacto (Formulario de registro)
-2.7 Pagina Perdidos
-2.8 Seccion servicios de algunas paginas
-2.9 Seccion imagenes inferiores de todas las paginas
-2.10 Seccion Footer
-2.11 Pagina adoptar__1 adoptar_2 adoptar_3
-2.12 Pagina adoptar
-3. Media Queris
-
-
-
-
-
-/*--------------------------------------------------------------
-/** 1. VARIABLES
---------------------------------------------------------------*/
-
 
 :root {
   /* anchos para filas y contenedores
@@ -240,9 +206,6 @@ a {
   --bs-breadcrumb-item-active-color: var(--bs-primary);
 }
 
-/* .dropdown-menu {
-  --bs-dropdown-link-active-bg: var(--bs-primary);
-} */
 
 .secondary-font {
   font-family: var(--secondary-font);
@@ -674,50 +637,6 @@ iconify-icon.send-icon {
 #comprar a.btn-cart:hover .text-uppercase {
   transform: scale(1.1); /* Crecimiento del icono al hacer hover */
 }
-
-
-
-
-
-/*--------------------------------------------------------------
-3. Media Queris
---------------------------------------------------------------*/
-
-/* @media screen and (max-width: 991px) {
-
-
-  .offcanvas-body .nav-item {
-    font-weight: 700;
-    border-bottom: 1px solid #d1d1d1;
-  }
-
-  .offcanvas-body .filter-categories {
-    width: 100%;
-    margin-bottom: 20px !important;
-    border: 1px solid #d1d1d1 !important;
-    padding: 14px;
-    border-radius: 8px;
-  }
-
-
-  .dropdown-menu {
-    padding: 0;
-    border: none;
-    line-height: 1.4;
-    font-size: 0.9em;
-  }
-
-  .dropdown-menu a {
-    padding-left: 0;
-  }
-
-  .dropdown-toggle::after {
-    position: absolute;
-    right: 0;
-    top: 21px;
-  }
-} */
-
 
 
 @media (max-width: 500px) {

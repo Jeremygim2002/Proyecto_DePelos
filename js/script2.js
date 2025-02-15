@@ -1,11 +1,11 @@
 
-/*---------------------- Esto es una función autoejecutable--------------- */
+
 (function($) {
 
   
     "use strict";
 
-    // El form no pueda enviarse sino esta lleno todo (formulario de adoptar_1,adoptar_2,adoptar_3)
+
     function validateForm() {
       var form = document.getElementById('form');
       var inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
@@ -17,13 +17,13 @@
       }
       return true;
   }
-    // =====================================================================
+
 
 
 
   
 
-      // Isotope que permite ordenar elementos de estilo grid (galeria de adoptar)
+
         var portfolioIsotope = $('.portfolio-container').isotope({
           itemSelector: '.portfolio-item',
           layoutMode: 'fitRows'
@@ -34,12 +34,12 @@
   
           portfolioIsotope.isotope({filter: $(this).data('filter')});
       });
-      // ========================================================================
+
   
 
 
 
-    // Función initPreloader, se apaga al cargar completamente la pagina(Todas las paginas)
+
     var initPreloader = function() {
       $(document).ready(function($) {
       var Body = $('body');
@@ -50,34 +50,20 @@
           $('body').removeClass('preloader-site');
       });
     }
-     // ========================================================================
 
 
 
-    // Inicializa la biblioteca Chocolat para mostrar imágenes en un lightbox con opciones de tamaño y bucle.
+
+
       var initChocolat = function() {
           Chocolat(document.querySelectorAll('.image-link'), {
             imageSize: 'contain',
             loop: true,
           })
       }
-    // ========================================================================
 
 
 
-
-//----------------------------------- CARRITO START -----------------------------------------//
-//-------------------------------------------------------------------------------------------//
-
-//------------------------------------ CARRITO END ------------------------------------------//
-//-------------------------------------------------------------------------------------------//
-
-
-
-
-
-
-    // Inicializa diferentes instancias de Swiper para crear carruseles de imágenes en varias secciones del sitio, Carrusel para imagenes (Home) 
     var initSwiper = function() {
   
       var swiper = new Swiper(".main-swiper", {
@@ -88,10 +74,6 @@
         },
       });
     }
-      // ========================================================================
-
-
-     //============== Swiper para ropa y accesorios (Home) =================
 
      document.addEventListener("DOMContentLoaded", function() {
       // Esperar a que todas las imágenes se carguen antes de inicializar Swiper
@@ -176,24 +158,6 @@
   }
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   // Contar el número de productos mostrados
-//   var totalProducts = document.querySelectorAll('.product-grid .col-md-4').length;
-  
-//   // Seleccionar el elemento que mostrará el texto
-//   var showingProductElement = document.querySelector('.showing-product p');
-  
-//   // Verificar si el elemento existe antes de actualizar el texto
-//   if (showingProductElement) {
-//     showingProductElement.textContent = "Mostrando " + totalProducts + " de " + totalProducts + " resultados";
-//   } else {
-//     console.error("El elemento '.showing-product p' no se encontró en el DOM.");
-//   }
-// });
-
-
-
-
 
     // Esta función permite aumentar y disminuir la cantidad de productos en un carrito de compras
     var initProductQty = function(){
@@ -270,18 +234,11 @@
         });
   
   
-
-
-
-
         var $grid = $('.entry-container').isotope({
           itemSelector: '.entry-item',
           layoutMode: 'masonry'
         });
   
-  
-
-
 
         // Inicializar isótopo
         var $container = $('.isotope-container').isotope({
@@ -290,8 +247,6 @@
           layoutMode: 'masonry'
         });
   
-
-
 
         // Configura los botones del filtro como por ejemplo (perros, gatos, todos) (Sol configura el boton)
         $(document).ready(function () {
