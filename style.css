@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  /* border: 1px solid #000; */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/login_image.jpg);
+    background-size: cover;
+    background-position: center; /* Centra la imagen de fondo horizontalmente */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    overflow-x: hidden;
+}
+
+/*------------------------- Informacion------------------ */
+/* Generales */
+.container-form {
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+  height: 500px;
+  max-width: 900px;
+  transition: all 1s ease;
+  margin: 10px;
+}
+
+.information {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #DEAD6F;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.info-childs h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: "Lilita One", sans-serif;;
+}
+
+.info-childs p {
+  margin: 15px 0 ;
+  color: #555;
+  font-family: "Quicksand", sans-serif;
+}
+
+.info-childs input {
+  background-color: #b08072;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+  background-color: #7a4f42;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+/* ------------------------------------------------------ */
+
+/* ------------------ Interaccion ----------------------- */
+.form-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+  padding: 0 30px;
+}
+
+.form-information-childs h2 {
+  color: #000;
+  font-size: 2rem;
+}
+
+.icons {
+  margin: 15px 0;
+}
+
+.icons i {
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #8c5f52;
+  border: solid thin #8c5f52;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.icons i:hover {
+  background-color: #7a4f42;
+  color: #fff;
+}
+
+.form {
+  margin: 30px 0 0 0;
+}
+
+.form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form label input {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #333;
+}
+
+.form label i {
+  color: #8c5f52;
+}
+
+.form input[type="submit"] {
+  background-color: #b08072;
+  color: #000;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  transition: background-color .3s ease;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #7a4f42;
+  color: #fff;
+}
+
+.hide {
+  position: absolute;
+  transform: translateY(-300%);
+}
+
+
+
+/*RESPONSIVE FORM*/
+@media screen and (max-width:750px) {
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container-form {
+    height: auto;
+    flex-direction: column;
+    margin: 0 8%;    
+  }
+
+  .information {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .form-information {
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+}
+

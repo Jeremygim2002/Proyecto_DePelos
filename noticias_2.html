@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!------------------ Metadatos ---------------------->
+  <!-- ============================================= -->
+  <meta charset="UTF-8">
+  <meta name="author" content="jremygim">
+  <meta name="description"
+    content="Proyecto para adopción de mascotas. Adémas, consejos y venta de productos para los mismos">
+  <meta name="keywords"
+    content="Adopción de mascotas, Venta de productos, Perros, Gatos, Consejos para cuidar mascotas, Salud de mascotas, Juguetes para mascotas, Alimentos para mascotas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Los numeros de teléfono no se conviertan en enlaces -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- La web se pueda ejecutar en pantalla completa (IOS) -->
+<meta name="mobile-web-app-capable" content="yes">
+
+
+  <!------------------ Titulo ---------------------->
+  <!-- ============================================= -->
+  <title>DePelos | Cómo estimular mentalmente ...</title>
+
+
+  <!------------------ Favicon ---------------------->
+  <!-- ============================================= -->
+  <link type="image/png" sizes="96x96" rel="icon" href="/images/icon/icon_2.png">
+
+
+  <!------------------ Estilos de letra ---------------------->
+  <!-- ==================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chilanka&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+
+
+  <!------------------ Estilos CSS ---------------------->
+  <!-- =============================================== -->
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+
+
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+  <!------------------ SVG (Adecua cada navegador a nuestra web)---------------------->
+  <!-- ============================================================================ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+
+    </defs>
+  </svg>
+
+
+
+  <!-- Animacion de carga -->
+  <div class="preloader-wrapper">
+    <div class="preloader">
+    </div>
+  </div>
+
+
+
+
+  <!------------------------------ Header -------------------------------->
+  <!-- ================================================================ -->
+  <header>
+    <!-- logo principal -->
+    <div class="container py-2">
+      <div class="row py-4 pb-0 pb-sm-4 align-items-center ">
+
+        <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+          <div class="main-logo">
+            <a href="bienvenida.php">
+              <img src="images/l1.png" alt="logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+
+        <!-- Datos de teléfono y gmail -->
+        <div
+          class="col-sm-8 col-lg-9 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+          <div class="support-box text-end d-none d-xl-block">
+            <span class="fs-6 secondary-font text-muted">Teléfono</span>
+            <h5 class="mb-0">999-999-999</h5>
+          </div>
+          <div class="support-box text-end d-none d-xl-block">
+            <span class="fs-6 secondary-font text-muted">Email</span>
+            <h5 class="mb-0">DePelos@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========================================================= -->
+
+
+    <!-- Linea bajo el Header 1 -->
+    <div class="container-fluid">
+      <hr class="m-0">
+    </div>
+
+
+    <!------------------------------- NavBar(MOBILE) ----------------------------->
+    <!-- ====================================================================== -->
+    <div class="container">
+      <nav class="main-menu d-flex navbar navbar-expand-lg ">
+
+
+        <!-- Parte IZQUIERDA (cuenta / favoritos / compras) -->
+        <div class="d-flex d-lg-none align-items-end mt-3">
+          <ul class="d-flex justify-content-end list-unstyled m-0">
+            <li>
+              <a href="php/cerrar_sesion.php" class="mx-3">
+                <iconify-icon icon="uis:signout" class="fs-4"></iconify-icon>
+              </a>
+            </li>
+            <li>
+              <a href="deseos.php" class="mx-3">
+                <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+              </a>
+            </li>
+
+            <!-- Numero e icono del carrito de compras -->
+            <li>
+              <a href="carrito.php" class="mx-3">
+                <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
+                <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                  MOB
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ================================================================= -->
+
+
+
+        <!-- Boton de despliegue(tres lineas) del navbar (MOBILE) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <!----------------------- NavBar (COMPUTADOR) ------------------------->
+        <!-- =============================================================== -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+          <!-- Boton de X para el navbar cuando esta en modo mobile -->
+          <div class="offcanvas-header justify-content-center">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body justify-content-between">
+            <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+              <li class="nav-item">
+                <a href="bienvenida.php" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="nosotros.php" class="nav-link">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="adoptar.php" class="nav-link">Adoptar</a>
+              </li>
+              <li class="nav-item">
+                <a href="comprar.php" class="nav-link">Comprar</a>
+              </li>
+              <li class="nav-item">
+                <a href="perdidos.php" class="nav-link active">Perdidos</a>
+              </li>
+              <li class="nav-item">
+                <a href="noticias.php" class="nav-link">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.php" class="nav-link">Contacto</a>
+              </li>
+
+            </ul>
+
+            <div class="d-none d-lg-flex align-items-end">
+              <ul class="d-flex justify-content-end list-unstyled m-0">
+                <li>
+                  <a href="php/cerrar_sesion.php" class="mx-3">
+                    <iconify-icon icon="uis:signout" class="fs-4"></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="deseos.php" class="mx-3">
+                    <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+                  </a>
+                </li>
+
+                <!-- Numero e icono del carrito de compras -->
+                <li class="">
+                  <a href="carrito.php" class="mx-3">
+                    <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
+                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                      COM
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ================================================================= -->
+      </nav>
+    </div>
+  </header>
+
+
+
+  <!-------------------------------- Seccion 1 (Título) -------------------------------->
+  <!-- ============================================================================== -->
+  <section id="banner" class="py-3" style="background: #F9F3EC;">
+    <div class="container">
+      <div class="hero-content py-5 my-3">
+        <h2 class="display-1 mt-3 mb-0">Noticias</h2>
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item nav-link" href="bienvenida.php">Home</a>
+          <span class="breadcrumb-item active" aria-current="page">Noticia 2</span>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-------------------------------- Seccion 2 (Cuerpo) -------------------------------->
+  <!-- ============================================================================== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="mt-5">
+        <div class="post-meta">
+          <span class="post-category">Gatos</span> / <span class="meta-date">22 Junio, 2024</span>
+        </div>
+        <h1 class="page-title">CÓMO ESTIMULAR MENTALMENTE A TU GATO</h1>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <main class="post-grid">
+          <div class="row">
+            <article class="post-item">
+              <div class="post-content">
+                <div class="post-thumbnail mb-5">
+                  <img src="images/noticia_2_1.jpg" alt="single-post" class="img-fluid">
+                </div>
+                <div class="post-description py-4">
+                  <p>
+                    <strong>En este artículo veremos la importancia de la estimulación mental para los gatos, destacando
+                      cómo actividades creativas y juegos no solo mantienen a los felinos activos y saludables, sino que
+                      también fortalecen el vínculo entre mascotas y dueños. Descubrirás estrategias efectivas para
+                      enriquecer la vida de tu gato, fomentando su bienestar físico y mental a través de un enfoque
+                      holístico y comprensivo.</strong>
+                  </p>
+
+                  <div class="row align-items-center mb-5">
+                    <div class="col-12 col-md-6">
+                      <p>
+                        <strong>¿CUÁLES SON LOS BENEFICIOS DE ESTIMULAR MENTALMENTE A LOS GATOS?</strong>
+                      </p>
+                      <ul style="list-style-type:disc;" class="inner-list">
+                        <a>
+                          <li>Mejora su salud mental y física</li>
+                        </a>
+                        <a>
+                          <li>Previene problemas de comportamiento</li>
+                        </a>
+                        <a>
+                          <li>Fortalece el vínculo contigo</li>
+                        </a>
+                        <a>
+                          <li>Enriquecimiento del entorno doméstico</li>
+                        </a>
+                        <a>
+                          <li>Prolonga su salud cognitiva en la vejez</li>
+                        </a>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <img src="images/noticia_2_2.jpg" alt="post-image" class="img-fluid">
+                    </div>
+                  </div>
+
+                  <p><strong>JUEGOS PARA ESTIMULAR MENTALMENTE A TU GATO</strong><br>
+                    Estimular mentalmente a tu gato es un aspecto crucial de su cuidado, esencial para mantener su
+                    bienestar físico y emocional. Aquí veremos diversas estrategias efectivas para mantener a tu felino
+                    feliz, activo y mentalmente estimulado:.</p>
+
+                  <p><strong> JUGUETES INTERACTIVOS</strong><br>
+                    Los juguetes interactivos son fundamentales para estimular la mente de tu gato. Opta por juguetes
+                    que imiten el comportamiento de la presa, como ratones mecánicos o láseres, para despertar su
+                    instinto de cazador. Estos juguetes no solo los mantienen entretenidos, sino que también promueven
+                    la actividad física.</p>
+
+                  <div class="d-none d-xl-flex justify-content-between my-5">
+                    <img src="images/noticia_2_3.jpg" alt="post-image" class="img-fluid">
+                    <img src="images/noticia_2_4.jpg" alt="post-image" class="img-fluid">
+                    <img src="images/noticia_2_5.jpg" alt="post-image" class="img-fluid">
+                    <img src="images/noticia_2_6.jpg" alt="post-image" class="img-fluid">
+                  </div>
+
+                  <p><strong> ÁREAS PARA EXPLORAR</strong><br>
+                    Crear un ambiente estimulante en casa es clave para el bienestar mental de tu gato. Las torres de
+                    gato en alturas diferentes les permiten saltar, trepar y observar su entorno desde puntos elevados,
+                    lo que es esencial para su naturaleza curiosa.</p>
+
+                  <p><strong> CAJAS Y ESCONDITES</strong><br>
+                    Los gatos adoran las cajas y los lugares donde esconderse. Proporcionarles cajas de diferentes
+                    tamaños y formas puede ser una manera excelente de estimular su mente, ofreciéndoles un espacio para
+                    explorar y sentirse seguros.</p>
+
+                  <p><strong>COMEDEROS INTERACTIVOS Y JUEGOS DE OLFATO</strong><br>
+                    Los comederos interactivos son una excelente manera de combinar alimentación con estimulación
+                    mental. Obligan a tu gato a trabajar por su comida, imitando el desafío de cazar. Los juegos de
+                    olfato, donde escondes golosinas para que las encuentre, también son efectivos para estimular sus
+                    sentido</p>
+
+                  <div class="post-tags mt-5">
+                    <div class="block-tag col-md-12">
+                      <ul class="list-unstyled d-flex">
+                        <li class="pe-3">
+                          <a class="btn btn-dark fs-6 py-2 px-3">Gatos</a>
+                        </li>
+                        <li class="pe-3">
+                          <a class="btn btn-dark fs-6 py-2 px-3">Curiosidad</a>
+                        </li>
+                        <li class="pe-3">
+                          <a class="btn btn-dark fs-6 py-2 px-3">Estimulación</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="single-post-navigation" class="my-5">
+                  <div class="post-navigation d-flex flex-wrap align-items-center justify-content-between">
+                    <a itemprop="url" class="post-prev d-flex flex-column text-decoration-none" href="noticias_1.html"
+                      title="Previous Post">
+                      <span class="text-muted">Anterior</span>
+                      <h3 class="page-nav-title">Adiestramiento Básico Para Per...</h3>
+                    </a>
+                    <a itemprop="url" class="post-next d-flex flex-column text-decoration-none" href="noticias_3.html"
+                      title="Next Post">
+                      <span class="text-muted">Siguiente</span>
+                      <h3 class="page-nav-title">¿Cómo Puede Ayudarte tu mascota...</h3>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-------------------------------- Seccion 4 (Carrousel de imágenes) -------------------------------->
+  <!-- ============================================================================================= -->
+  <section id="insta" class="my-5">
+    <div class="row g-0 py-5">
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a>
+          <img src="images/insta_1.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a>
+          <img src="images/insta_2.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a>
+          <img src="images/insta_3.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a>
+          <img src="images/insta_4.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a>
+          <img src="images/insta_5.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+      <div class="col instagram-item  text-center position-relative">
+        <div class="icon-overlay d-flex justify-content-center position-absolute">
+          <iconify-icon class="text-white" icon="la:instagram"></iconify-icon>
+        </div>
+        <a>
+          <img src="images/insta_6.jpg" alt="insta-img" class="img-fluid rounded-3">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--------------------- Footer ------------------------->
+  <!-- ================================================ -->
+  <footer id="footer" class="my-5">
+    <div class="container py-5 my-5">
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center">
+          <div class="footer-menu">
+            <img src="images/l3.png" alt="logo">
+            <p class="blog-paragraph fs-6 mt-3">Adopta y haz que el mundo sea un lugar más amigable y peludo. Porque el
+              amor no tiene precio ¡pero sí tiene cola!</p>
+            <div class="social-links d-flex justify-content-center">
+              <ul class="d-flex list-unstyled gap-2">
+                <li class="social">
+                  <a href="https://www.facebook.com/jeremigim.rosas/">
+                    <iconify-icon class="social-icon" icon="ri:facebook-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="https://github.com/Jeremygim2002">
+                    <iconify-icon class="social-icon" icon="ri:github-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="https://wa.me/928786676?text=Si puedes imaginarlo, puedes programarlo.">
+                    <iconify-icon class="social-icon" icon="ri:whatsapp-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="https://www.instagram.com/jremygim/">
+                    <iconify-icon class="social-icon" icon="ri:instagram-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="https://www.tiktok.com/@jremygim">
+                    <iconify-icon class="social-icon" icon="ri:tiktok-fill"></iconify-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+          <div class="footer-menu ">
+            <h3>Links rápidos</h3>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="bienvenida.php" class="nav-link">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="nosotros.php" class="nav-link">Nosotros</a>
+              </li>
+              <li class="menu-item">
+                <a href="comprar.php" class="nav-link">Comprar</a>
+              </li>
+              <li class="menu-item">
+                <a href="perdidos.php" class="nav-link">Perdidos</a>
+              </li>
+              <li class="menu-item">
+                <a href="noticias.php" class="nav-link">Noticias</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+          <div class="footer-menu">
+            <h3>Centro de ayuda</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item">
+                  <a href="contacto.php" class="nav-link">Contacto</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+          <div>
+            <h3>Suscribete</h3>
+            <p class="blog-paragraph fs-6">Solo asi recibiras las últimas noticias y promociones para los pequeños de 4
+              patas</p>
+            <div class="search-bar border rounded-pill border-dark-subtle px-2">
+              <form class="text-center d-flex align-items-center" action="" method="">
+                <input type="text" class="form-control border-0 bg-transparent" placeholder="Ingresa tu email" />
+                <iconify-icon class="send-icon" icon="tabler:location-filled"></iconify-icon>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="footer-bottom">
+    <div class="container">
+      <hr class="m-0">
+      <div class="row mt-3">
+        <div class="col-md-6 copyright">
+          <p class="secondary-font">© 2024 DePelos. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script2.js"></script>
+  <script src="js/iconify.js"></script>
+</body>
+
+</html>
